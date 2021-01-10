@@ -8,7 +8,11 @@ pip install -r requirements.txt
 #Команды для докера:
 
 Для запуска контейнера с монгой
+
 docker run --detach --rm --name mongodb --publish 27017:27017 mongo
+
+docker stop mongodb
+
 
 docker build -t test.pycharm.mongo .
 
